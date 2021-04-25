@@ -1,0 +1,12 @@
+github:
+  name: github
+  description: False
+  cover: assets/built/images/background-frontend.jpg
+algorithm:
+  name: algorithm
+  description: False
+  cover: assets/built/images/background-frontend.jpg
+economy:
+  name: economy
+  description: False
+  cover: assets/built/images/background-frontend.jpg
