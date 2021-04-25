@@ -38,13 +38,14 @@ author: egeg1212
 |              | [12강] Jekyll 기반의 GitHub Page 생성(7) - GitHub Gist 활용                                                            |
 |              | [13강] Jekyll 기반의 GitHub Page 생성(8) - Travis CI 활용                                                              |
 
-얼큰우동TV의 <https://moon9342.github.io>
+얼큰우동의깃헙 <https://moon9342.github.io>
+얼큰우동의깃페이지 <https://moon9342.github.io/tag/jekyll/>
 
 ## 1강(1 환경설정)
 
 https://rubyinstaller.org/downloads/ 다운받아 설치하고
 CMD창에서 `gem install bundler`
-참조 :https://moon9342.github.io/jekyll-struct
+참조 :<https://moon9342.github.io/jekyll-struct>
 jasper2 theme을 다운받아 압축풀어 내용을
 나의 blogmaker로 복사해온다....안그럼 아래 명령어 실행했을때 'could not locate gemfile' 이런 에러문구 뜸ㅜㅜ
 CMD창에서 해당 blog위치로 이동해서. `bundel install` (설치하는데 시간 좀 걸림)
@@ -63,8 +64,8 @@ CMD의 Server address: http://127.0.0.1:4000/jasper2// 부분의 뒤에
 
 ## 2강(2-1 환경설정파일)
 
-유튜브 https://www.youtube.com/watch?v=OO5IZrx1ZVE&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=2
-블로그 https://moon9342.github.io/jekyll-struct
+유튜브 <https://www.youtube.com/watch?v=OO5IZrx1ZVE&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=2>
+블로그 <https://moon9342.github.io/jekyll-struct>
 
 WebStorm IDE설치..저는 vsCode로 :-)
 blogmaker의 assets폴더에 \_config.yml수정
@@ -72,16 +73,16 @@ blogmaker의 assets폴더에 \_config.yml수정
 
 ## 3강(2-2 author와 tags 설정)
 
-유튜브 https://www.youtube.com/watch?v=Ohrc__9z694&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=3
-블로그 https://moon9342.github.io/jekyll-struct
+유튜브 <https://www.youtube.com/watch?v=Ohrc__9z694&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=3>
+블로그 <https://moon9342.github.io/jekyll-struct>
 
 blogmaker의 \_data폴더에 authors.yml수정
 blogmaker의 \_data폴더에 tags.yml수정
 
 ## 4강(2-3 메뉴와 글 올리기)
 
-유튜브 https://www.youtube.com/watch?v=lh7aYzNcgDs&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=4
-블로그 https://moon9342.github.io/jekyll-struct
+유튜브 <https://www.youtube.com/watch?v=lh7aYzNcgDs&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=4>
+블로그 <https://moon9342.github.io/jekyll-struct>
 
 blogmaker의 \_includes폴더에 navigation.html수정
 
@@ -92,8 +93,8 @@ python을 github로 변경
 
 ## 5강(2-4 Archive설정 및 이미지설정)
 
-유튜브 https://www.youtube.com/watch?v=yqtkI84C2Vw&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=5
-블로그 https://moon9342.github.io/jekyll-struct
+유튜브 <https://www.youtube.com/watch?v=yqtkI84C2Vw&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=5>
+블로그 <https://moon9342.github.io/jekyll-struct>
 
 각각 필요한 이미지를 blogmaker/assets/built/images폴더에 저장하기(logo, favicon, cover)
 assets/built/images/blog-cover1.png
@@ -109,8 +110,8 @@ author_archive.md파일만들기
 
 ## 6강(2-5 post목차 설정)
 
-유튜브 https://www.youtube.com/watch?v=acVpibElHZ8&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=6
-블로그 https://moon9342.github.io/jekyll-struct
+유튜브 <https://www.youtube.com/watch?v=acVpibElHZ8&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=6>
+블로그 <https://moon9342.github.io/jekyll-struct>
 
 \_includes/github-table-of-contents.html (내용복붙)
 그중 주의할점 포스팅파일의 날짜 빼고,확장자 빼고 뒤에 이름만넣기
@@ -136,8 +137,8 @@ CMD에 `gulp css`하면 gulpfile.js의 css부분이 실행됨^^....근데 난 �
 
 ## 7강(2-6 publishing)
 
-유튜브 https://www.youtube.com/watch?v=C9g8Fbc43Lk&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=7
-블로그 https://moon9342.github.io/jekyll-struct
+유튜브 <https://www.youtube.com/watch?v=C9g8Fbc43Lk&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=7>
+블로그 <https://moon9342.github.io/jekyll-struct>
 
 앞전 6강에서 미니파이즈한 css파일을 적용시켜보자;ㅋㅋ
 blogmaker/\_layouts/default.html 열어보면 14줄 Styles'n'Scripts부분 아래 추가하기
@@ -159,8 +160,8 @@ egeg1212.github.io 블로그에 반영되는데까지는 시간이 5분내외 �
 
 ## 8강(3-웹 폰트 설정)
 
-유튜브 https://www.youtube.com/watch?v=48pAqr9pMUU&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=8
-블로그 https://moon9342.github.io/jekyll-font
+유튜브 <https://www.youtube.com/watch?v=48pAqr9pMUU&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=8>
+블로그 <https://moon9342.github.io/jekyll-font>
 
 blogmaker/\_layouts/degault.html수정
 웹폰트추가 내용복붙. 이것만으로 적용되지는 않는다. 조금 더 설정해보자.
@@ -172,7 +173,7 @@ blogmaker/assets/css/screen.css에서
 블로그 https://moon9342.github.io/css-fontawesome-list
 blogmaker/\_layouts/default.html에 22줄쯤에 추가한다.
 
-```
+```css
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 ```
@@ -182,4 +183,100 @@ CMD에서 blogmaker로 이동해서 `gulp css`.........엌 왜 글씨체도 안�
 
 ## 9강(4-rouge를 이용한 syntax highlighting)
 
-유튜브 https://www.youtube.com/watch?v=ad07tYeZQdc&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=9
+유튜브 <https://www.youtube.com/watch?v=ad07tYeZQdc&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=9>
+블로그 <https://moon9342.github.io/jekyll-rouge>
+기술블로그 특성상 코드를 예쁘게 표현하는 기능.
+
+blogmaker/\_config.yml에
+24줄 `highlighter: rouge`로 이미 지정은 되었으나 설치는 안되었으니 설치해보자.
+CMD에 blogmaker위치에서 `gem install rouge`명령어를 실행하면 최신버전으로 알아서 설치해준다^^
+
+...자꾸 gulp에서 막힌다 ㅠㅠ  
+node.js 버전을 맞춰주기 위해
+가상환경을 생성한다 ㅠㅠ (하실분들은 처음부터 하십쇼ㅠㅠ)
+CMD에 맨앞에 (base)라 뜬다.. base가상환경에는 node.js가 신버전이니까...ㅠㅠ
+
+`conda create -n blogmaker` 가상환경명을 blogmaker로 지정한것임.
+`conda env list` 가상환경의 리스트를 확인
+`conda deactivate` 기존 베이스가상환경에서 나옴
+`conda activate blogmaker` blogermaker라는 가상환경으로 들어가기~
+CMD 맨앞에 (blogmaker)라고 뜬걸 확인됐다면 정상이다!
+자, 이제 여기서 설치 다시..... 😭
+CMD에서 `node -v` 명령어를 실행하면 어..어랏 v12.18.4가나오네;;;?? 11ver로 낮춰여한다아ㅜㅜ
+`npm -v`명령어를 실행하면 6.14.6 버전으로 확인되었다.
+... window node 버전낮추기 검색하니까..
+기존에 설치한 node.js를 모두 지우고; nvm을 설치해서 하라고.. 허허허
+
+나.. 다시.. base가상환경으로 돌아갈래...
+
+CMD창에 `rougify help style` 어떤 루즈스타일이 있는지 모여준다
+얼큰우동님이 쓰시는건 그중 monokai.sublime 스타일.
+아래 명령어의 뜻은 assets/css/syntax.css 여기위치에 .css파일을 monokai.sublime 스타일로 바꿔줘~라는 뜻.
+`rougify style monokai.sublime > assets/css/syntax.css`
+모든 스타일은 `_layouts/default.html`여기에 등록을 해줘야 적용이 된다!
+28줄 쯔음에 추가한다.
+
+```css
+<!-- syntax.css -->
+    <link rel="stylesheet" href="/assets/built/syntax.css">
+```
+
+그 이후에 gulp로 minifyed시켜준다(나는 안됨; gulp엄청 사용하네...ㅠㅠ)
+
+컴파일해서 확인하기
+`bundle exec jekyll server`
+
+코드가 예쁘게 하이라이팅되는지 테스트하기.
+
+```javascript
+function syntaxHighlight(code) {
+  var foo = "Hello World";
+  var bar = 100;
+}
+```
+
+## 10강(5-lunr.js를 이용한 Search 기능 추가)
+
+유튜브 <https://www.youtube.com/watch?v=usfdc-7BKa4&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=10>
+블로그 <https://moon9342.github.io/jekyll-search>
+
+우측상단의 구독버튼을 서치기능으로 만들기
+blogmaker/\_includes/site-nav.html를 열어 24줄을 아래와 같이 부분수정합니다.
+Subscribe라는 글자를 Search로 바꾸고
+다시 컴파일
+`bundle exec jekyll server` 명령어 실행하고
+server address: http://127.0.0.1:4000// 접속해보면
+우측상단의 버튼이 Serch버튼으로 바뀌었다!👌
+
+blogmaker/\_layouts/default.html를 열어보면 91줄쯤에 `if site.subscribers`이것이 있다.
+가운데 내용을 얼큰우동님꺼에서 복붙.
+
+다음으로 blogmaker/\_includes/subscribe-form.html여기에서 폼을 수정한다.
+
+컴파일해서 확인하기
+`bundle exec jekyll server`
+
+검색 결과가 표현될 blogmaker/search.html을 생성합니다.
+내용은 얼큰우동님것 복붙.
+
+lunr.js를 생성합니다. blogermaker/assets/js/ 폴더아래 lunr.js를 저장합니다(얼큰우동님것 내용 복붙)
+search.js를 생성합니다. blogermaker/assets/js/ 폴더아래 search.js를 저장합니다(얼큰우동님것 내용 복붙)
+
+## 11강(6-Google Search Console활용)
+
+유튜브 <https://www.youtube.com/watch?v=3ltTMosopwY&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=11>
+블로그 <https://moon9342.github.io/jekyll-sitemap>
+
+구글검색엔진에 쉽게 노출되도록 처리.
+blogmaker/robot.txt생성.
+내용은
+
+```xml
+User-agent: *
+Allow: /
+# Disallow: /privateData/ 만약크롤링에 안보였으면 하는 글은 여기에 추가.
+Sitemap: https://egeg1212.github.io/sitemap.xml
+```
+
+blogmaker/sitemap.xml생성. 내용복붙
+7:47

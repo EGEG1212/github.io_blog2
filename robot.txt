@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://egeg1212.github.io/sitemap.xml
