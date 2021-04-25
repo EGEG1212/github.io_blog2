@@ -61,22 +61,28 @@ Destination: ../jasper2-pages/ 폴더가 생기면서!(그런데 왜 blogmaker�
 CMD의 Server address: http://127.0.0.1:4000/jasper2// 부분의 뒤에
 `http://127.0.0.1:4000/jasper2` 이걸 크롬주소창에 넣어보면 기본 뙇!
 
-## 2강(2-1 환경설정파일) 유튜브 https://www.youtube.com/watch?v=OO5IZrx1ZVE&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=2
+## 2강(2-1 환경설정파일)
 
+유튜브 https://www.youtube.com/watch?v=OO5IZrx1ZVE&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=2
 블로그 https://moon9342.github.io/jekyll-struct
+
 WebStorm IDE설치..저는 vsCode로 :-)
 blogmaker의 assets폴더에 \_config.yml수정
 탐색기열어서 내PC에서 우클릭.-왼쪽 변에 고급시스템설정 - 고급 탭 - 하단에 환경변수- 첫번째 새로만들기 - '변수이름'부분에 `JEKYLL_ENV` 그리고 '변수값'부분에 `production` 쓰고 확인버튼
 
-## 3강(2-2 author와 tags 설정) 유튜브 https://www.youtube.com/watch?v=Ohrc__9z694&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=3
+## 3강(2-2 author와 tags 설정)
 
+유튜브 https://www.youtube.com/watch?v=Ohrc__9z694&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=3
 블로그 https://moon9342.github.io/jekyll-struct
+
 blogmaker의 \_data폴더에 authors.yml수정
 blogmaker의 \_data폴더에 tags.yml수정
 
-## 4강(2-3 메뉴와 글 올리기) 유튜브 https://www.youtube.com/watch?v=lh7aYzNcgDs&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=4
+## 4강(2-3 메뉴와 글 올리기)
 
+유튜브 https://www.youtube.com/watch?v=lh7aYzNcgDs&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=4
 블로그 https://moon9342.github.io/jekyll-struct
+
 blogmaker의 \_includes폴더에 navigation.html수정
 
 메뉴about은 블로그 소개글. (about폴더의 index.md)
@@ -84,9 +90,11 @@ blogmaker의 \_includes폴더에 navigation.html수정
 jekyll을 algorithm으로 변경
 python을 github로 변경
 
-## 5강(2-4 Archive설정 및 이미지설정) 유튜브 https://www.youtube.com/watch?v=yqtkI84C2Vw&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=5
+## 5강(2-4 Archive설정 및 이미지설정)
 
+유튜브 https://www.youtube.com/watch?v=yqtkI84C2Vw&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=5
 블로그 https://moon9342.github.io/jekyll-struct
+
 각각 필요한 이미지를 blogmaker/assets/built/images폴더에 저장하기(logo, favicon, cover)
 assets/built/images/blog-cover1.png
 assets/built/images/favicon.jpg
@@ -99,9 +107,11 @@ assets/built/images/economy-author-logo.jpg # author image
 blogmaker/archive.md파일만들기(파일내용은 블로그에있음)
 author_archive.md파일만들기
 
-## 6강(2-5 post목차 설정) 유튜브 https://www.youtube.com/watch?v=acVpibElHZ8&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=6
+## 6강(2-5 post목차 설정)
 
+유튜브 https://www.youtube.com/watch?v=acVpibElHZ8&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=6
 블로그 https://moon9342.github.io/jekyll-struct
+
 \_includes/github-table-of-contents.html (내용복붙)
 그중 주의할점 포스팅파일의 날짜 빼고,확장자 빼고 뒤에 이름만넣기
 포스팅파일의 title을 똑같이 넣어줘야 보는사람이 안헷갈림 ㅋㅋ
@@ -124,11 +134,52 @@ CMD에 `gulp css`하면 gulpfile.js의 css부분이 실행됨^^....근데 난 �
 자, 이제 확인해보자~ 컴파일하기
 `bundle exec jekyll server`
 
-## 7강(2-6 publishing) 유튜브 https://www.youtube.com/watch?v=C9g8Fbc43Lk&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=7
+## 7강(2-6 publishing)
 
+유튜브 https://www.youtube.com/watch?v=C9g8Fbc43Lk&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=7
 블로그 https://moon9342.github.io/jekyll-struct
+
 앞전 6강에서 미니파이즈한 css파일을 적용시켜보자;ㅋㅋ
 blogmaker/\_layouts/default.html 열어보면 14줄 Styles'n'Scripts부분 아래 추가하기
 `<!-- custom.css minified실패ㅋ assets/built/custom.css 없어서--> <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/custom.css" />`
 다시 컴파일해서 확인하자
 `bundle exec jekyll server` 응?? 적용안되었썽..... ㅠㅠ
+
+GitHub의 `Repositories`와 lacal의 `blogmaker`를 아래와 같이 연결한다.
+나는 IDE를 webstorm을 안쓰고 vsCode를 써서 원래하던대로 함..;;
+깃홈피에서 repositories를 만들면 명령어가 순서대로 좌르륵- 뜬다~ 그대로 해주면 된다;
+CMD에서 blogmaker폴더로 이동해서
+`git init`명령어 실행. (그러면 `.git`숨김파일이 생깁니다.)
+CMD에서 `git add .`명령어 실행.
+`git commit -m "first"`명령어 실행. 'first'대신 커밋할 내용을 써줘도 됩니다~
+git remote add origin~
+git push -u origin master~
+그러면 GitHub의 `Repositories`와 lacal의 `blogmaker`가 연결이 완료되며,
+egeg1212.github.io 블로그에 반영되는데까지는 시간이 5분내외 소요되는듯 하다.
+
+## 8강(3-웹 폰트 설정)
+
+유튜브 https://www.youtube.com/watch?v=48pAqr9pMUU&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=8
+블로그 https://moon9342.github.io/jekyll-font
+
+blogmaker/\_layouts/degault.html수정
+웹폰트추가 내용복붙. 이것만으로 적용되지는 않는다. 조금 더 설정해보자.
+blogmaker/assets/css/screen.css에서
+`.post-full-content`를 찾는다. 623줄 정도의 'font-family'를 수정한다
+`font-family: Georgia, 'Nanum Gothic', serif;`
+
+조금 더 예쁘게 보일 Font-Awesome을 추가해보자.
+블로그 https://moon9342.github.io/css-fontawesome-list
+blogmaker/\_layouts/default.html에 22줄쯤에 추가한다.
+
+```
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+```
+
+(나는 gulp압축에 실패했지만ㅋ )
+CMD에서 blogmaker로 이동해서 `gulp css`.........엌 왜 글씨체도 안변했을뿐더러; 메뉴 누르면 404에러뜹니다 ㅠㅠㅠ왜그러죠
+
+## 9강(4-rouge를 이용한 syntax highlighting)
+
+유튜브 https://www.youtube.com/watch?v=ad07tYeZQdc&list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&index=9
