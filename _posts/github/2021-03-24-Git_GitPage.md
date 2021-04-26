@@ -38,7 +38,7 @@ author: egeg1212
 |              | [12강] Jekyll 기반의 GitHub Page 생성(7) - GitHub Gist 활용                                                            |
 |              | [13강] Jekyll 기반의 GitHub Page 생성(8) - Travis CI 활용                                                              |
 
-얼큰우동의깃헙 <https://moon9342.github.io>
+얼큰우동의깃헙 <https://github.com/moon9342>
 얼큰우동의깃페이지 <https://moon9342.github.io/tag/jekyll/>
 
 ## 1강(1 환경설정)
