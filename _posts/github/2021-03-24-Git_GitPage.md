@@ -280,3 +280,5 @@ Sitemap: https://egeg1212.github.io/sitemap.xml
 
 blogmaker/sitemap.xml생성. 내용복붙
 7:47
+
+gulp해결 <https://www.opentutorials.org/module/4533/27464>
