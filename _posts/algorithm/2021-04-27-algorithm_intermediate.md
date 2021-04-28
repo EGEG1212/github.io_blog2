@@ -94,12 +94,12 @@ Binomial Cistribution과 Geometric Distribution에 대해 알아보았는데<br>
 **동적계획법을 적용하기 위해서는 최적해 구조와 재귀 구조를 가져야 함.**
 문제해결방법의 4가지
 
-1. Brute-Force Approach : 전수조사(모든경우를 다해보고 가장빠르다, 가장적다라는 판결을 내리기 때문에 시간이 오래걸림)
+1. Brute-Force Approach : 전수조사(모든경우를 다해보고;; 가장빠르다, 가장적다라는 판결을 내리기 때문에 시간이 오래걸림)
 2. Divide and Conquer Approach : 큰문제를 작게쪼개어 병렬적으로 해결.
 3. Dynamic Programming Approach : 주어진 문제를 하위로 나누어서 해결.(Divide and conquer와 비슷하지만 문제간의 관계가 다름)종속성을 가질 때 사용.
 4. Greedy Approach : 해당문제의 최적답을 고르면 전체에 답이 최적일 것이다.
 
-동적프로그래밍의 특징
+**동적프로그래밍의 특징**
 
 - 모든 하위 문제를 풀고 그 결과를 저장해 둠
 - 저장되어 있던 결과는 다음 단계의 문제를 푸는 데 사용(연관성)
@@ -118,4 +118,17 @@ ex) 최단경로문제
 
 조립을 통해 제품이 완성될 때 여러 개의 과정과 여러 개의 라인이 존재할 때 최적의 조합을 찾아<br>**가장 빠른 시간과 경로를 동적계획법을 이용하여 해결**
 
-##
+### 동적계획법을 적용한 Matrix-Chain Multiplication
+
+행렬의 곱은 그 순서에 따라 곱셈의 횟수가 달라지기 때문에 효율적으로 계산하기 위해서는 가장 최소인 경우를 찾아야 함
+
+**수행시간**
+$O(n^3)$ time in total : 주어진 매트릭스에 대해 매번 동일값을 매번 반복해서 계산.
+$\Theta(n2)$ subproblems : 주어진값을 매트릭스형태로 n\*n으로 계산된값을 모든 매트릭스에 반복적용.
+$O(n)$ time for each subproblem
+
+**공간사용**
+$\Theta(n^2)$
+
+Overlapping Subproblems : 하위 문제가 반복적으로 등장하는 경우
+Memoization : 하위 문제가 반복적으로 등장하는 경우 계산한 값을 저장하여 효율성을 올림
