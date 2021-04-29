@@ -127,7 +127,7 @@ blogmaker/package.json 모든내용지우고 얼큰우동님 내용복붙(NPM! �
 CMD에 `npm install` 하면 /node_modules폴더가 생깁니다(여기에 NPM을 통해 Gulp설치가된것임)
 CMD에 `gulp css`하면 gulpfile.js의 css부분이 실행됨^^....근데 난 실패함; 음... 그.. 아마도 npm ver높은듯;
 `node -v`코드실행하면 node version 확인가능 (엇..나는 12.18.4네 ㅠㅠ11이여야하는데;;높네 ㅠㅠ 미니파이즈하지말지~뭐 ㅋㅋㅋ)(미래의나: 안돼..안돼!! 꼭 해결해야해!!!)
-gulp해결 <https://www.opentutorials.org/module/4533/27464>
+node 버전낮춰서 gulp해결 <https://www.opentutorials.org/module/4533/27464>
 성공한다면; assets/built/custom.css파일이 생기면서 열어보면 내용은 한줄로~~~
 
 마지막으로 완성된 ㅋ 목차(table-of-contents-algorithm.html)를 글에 추가하자!
@@ -205,8 +205,9 @@ CMD 맨앞에 (blogmaker)라고 뜬걸 확인됐다면 정상이다!
 자, 이제 여기서 설치 다시..... 😭
 CMD에서 `node -v` 명령어를 실행하면 어..어랏 v12.18.4가나오네;;;?? 11ver로 낮춰여한다아ㅜㅜ
 `npm -v`명령어를 실행하면 6.14.6 버전으로 확인되었다.
-... window node 버전낮추기 검색하니까..
+... 'window node 버전낮추기' 검색하니까..
 기존에 설치한 node.js를 모두 지우고; nvm을 설치해서 하라고.. 허허허
+참고 <https://seunghyun90.tistory.com/52>
 
 나.. 다시.. base가상환경으로 돌아갈래...
 
