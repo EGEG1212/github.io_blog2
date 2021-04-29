@@ -7,7 +7,7 @@ title: 2. Git과 GitHub로 내 커리어 만들기
 date: 2021-03-08 16:40:00
 tags: [github]
 class: post-template
-subclass: "post tag-GitHub"
+subclass: "post tag-github"
 author: egeg1212
 ---
 

@@ -7,7 +7,7 @@ title: 1. Git & GitHub Page
 date: 2021-03-07 16:40:00
 tags: [github]
 class: post-template
-subclass: "post tag-GitHub"
+subclass: "post tag-github"
 author: egeg1212
 ---
 

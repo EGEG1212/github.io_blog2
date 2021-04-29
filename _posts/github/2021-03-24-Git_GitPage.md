@@ -7,7 +7,7 @@ title: 3. Jekyll 기반의 GitHub Page 생성
 date: 2021-03-24 16:40:00
 tags: [github]
 class: post-template
-subclass: "post tag-GitHub"
+subclass: "post tag-github"
 author: egeg1212
 ---
 
