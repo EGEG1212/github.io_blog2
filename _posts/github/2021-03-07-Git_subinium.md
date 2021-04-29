@@ -11,7 +11,7 @@ subclass: "post tag-GitHub"
 author: egeg1212
 ---
 
-{% include git-table-of-contents.html %}
+{% include table-of-contents-git.html %}
 
 # 1. Git & GitHub Page
 

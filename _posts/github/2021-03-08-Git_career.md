@@ -11,7 +11,7 @@ subclass: "post tag-GitHub"
 author: egeg1212
 ---
 
-{% include git-table-of-contents.html %}
+{% include table-of-contents-git.html %}
 
 # 2. Git과 GitHub로 내 커리어 만들기
 

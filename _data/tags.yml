@@ -7,6 +7,6 @@ algorithm:
   description: False
   cover: assets/built/images/background-frontend.jpg
 economy:
-  name: economy
+  name: audio
   description: False
   cover: assets/built/images/background-frontend.jpg

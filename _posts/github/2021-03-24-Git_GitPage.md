@@ -11,7 +11,7 @@ subclass: "post tag-GitHub"
 author: egeg1212
 ---
 
-{% include git-table-of-contents.html %}
+{% include table-of-contents-git.html %}
 
 > 처음엔 CSS부분? 줄바꿈에 대한 에러만 고치고 싶었다.....
 > 그런데 왠걸? commit으로 io에 업데이트 잘되던게 안된다...
@@ -126,11 +126,12 @@ blogmaker/gulpfile.js 모든내용지우고 얼큰우동님 내용복붙 (걸프
 blogmaker/package.json 모든내용지우고 얼큰우동님 내용복붙(NPM! 이렇게 깔아줘~주문서)
 CMD에 `npm install` 하면 /node_modules폴더가 생깁니다(여기에 NPM을 통해 Gulp설치가된것임)
 CMD에 `gulp css`하면 gulpfile.js의 css부분이 실행됨^^....근데 난 실패함; 음... 그.. 아마도 npm ver높은듯;
-`node -v`코드실행하면 node version 확인가능 (엇..나는 12.18.4네 ㅠㅠ11이여야하는데;;높네 ㅠㅠ 미니파이즈하지말지~뭐 ㅋㅋㅋ)
+`node -v`코드실행하면 node version 확인가능 (엇..나는 12.18.4네 ㅠㅠ11이여야하는데;;높네 ㅠㅠ 미니파이즈하지말지~뭐 ㅋㅋㅋ)(미래의나: 안돼..안돼!! 꼭 해결해야해!!!)
+gulp해결 <https://www.opentutorials.org/module/4533/27464>
 성공한다면; assets/built/custom.css파일이 생기면서 열어보면 내용은 한줄로~~~
 
-마지막으로 완성된 ㅋ 목차(algorithm-table-of-contents.html)를 글에 추가하자!
-`{% include algorithm-table-of-contents.html %}` 코드를 해당 포스트에 각각 머릿말 아래 넣기
+마지막으로 완성된 ㅋ 목차(table-of-contents-algorithm.html)를 글에 추가하자!
+`{% include table-of-contents-algorithm.html %}` 코드를 해당 포스트에 각각 머릿말 아래 넣기
 
 자, 이제 확인해보자~ 컴파일하기
 `bundle exec jekyll server`

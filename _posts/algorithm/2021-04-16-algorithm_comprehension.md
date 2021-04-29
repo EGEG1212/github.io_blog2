@@ -10,7 +10,8 @@ class: post-template
 subclass: "post tag-algorithm"
 author: egeg1212
 ---
-{% include algorithm-table-of-contents.html %}
+
+{% include table-of-contents-algorithm.html %}
 
 # 성공적인 프로그래밍을 위한 컴퓨터 알고리즘 이해
 

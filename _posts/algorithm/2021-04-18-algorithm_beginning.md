@@ -11,7 +11,7 @@ subclass: "post tag-algorithm"
 author: egeg1212
 ---
 
-{% include algorithm-table-of-contents.html %}
+{% include table-of-contents-algorithm.html %}
 
 # 컴퓨터 알고리즘 초급
 
