@@ -23,8 +23,8 @@ author: egeg1212
 | :----------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **학습내용** | Graph, Greedy, Dynamic programming 등 컴퓨터 알고리즘 이론을 보다 깊이 있게 학습하고 이해한다.<br>Maximum Flow, Number Theory, String matching 등의 심화 알고리즘 관련 지식을 학습한다. |
 |   **강사**   | 조호성 박사 (한양대학교 SW융합원)                                                                                                                                                       |
-| **학습기간** | 2021.04.27~ + 테스트20문항 **이수중**                                                                                                                                                   |
-| **학습시간** | **이수중**                                                                                                                                                                              |
+| **학습기간** | 2021.04.27~ + 테스트20문항 **이수완료**                                                                                                                                                 |
+| **학습시간** | **05:19:40**                                                                                                                                                                            |
 | **강의목록** | [1강] 컴퓨터 알고리즘 성능분석(1)                                                                                                                                                       |
 |              | [2강] 컴퓨터 알고리즘 성능분석(2)                                                                                                                                                       |
 |              | [3강] 확률분석(1)                                                                                                                                                                       |
@@ -92,7 +92,7 @@ Binomial Cistribution과 Geometric Distribution에 대해 알아보았는데<br>
 ### 동적계획법(Dynamic Programming)
 
 **동적계획법을 적용하기 위해서는 최적해 구조와 재귀 구조를 가져야 함.**
-문제해결방법의 4가지
+✨문제해결방법의 4가지✨
 
 1. **Brute-Force Approach** : 전수조사(모든경우를 다해보고;; 가장빠르다, 가장적다라는 판결을 내리기 때문에 시간이 오래걸림)
    모든 경우의 답을 구해보는 일반적인 방법
@@ -304,3 +304,79 @@ Rivest-Shamir-Adelman 연구자가 공동으로 개발
 방향성 또는 무방향성 그래프에서<br> 각 간선이 용량(Capacity)과 흐름(Flow)을 갖는 경우
 ex) 도로, 순환, 전자회로, 파이프의 흐름 등을 표현
 -Maximum flow problem은 그래프에서 최대 흐름의 양을 찾는 문제
+
+### Flow networks를 Ford-Fulkerson Method로 풀어보자
+
+- Greedy 알고리즘으로 Flow networks에서 Max, flow 문제를 해결
+- Augmenting paths와 residual nerwork를 이용하여 여분의 경로를 찾고 흐름의 양을 계속 추가하는 과정을 반복
+
+### Amortized Analysis(분할상환 방식)
+
+- 자료구조에서 **하나의 Operation**을 수행할 때 필요한 시간을 **전체 Operation을 수행할 때의 평균 시간**으로 바꾸어 놓는 것
+- Amortized Analusis는 Average Case Analysis와는 다르며 차이점은 확률적인 계산이 포함되지 않음(모든 경우, 최악의 경우 모두를 고른다)
+- 목표는 최악의 경우일 때, 각 Operation의 평균 성능을 보장해주는 것
+
+**3가지 기술 사용**
+(3가지 모두 고비용의 Operation이 있을때 미리 비용을 계산해놓고, 크레딧 혹은 포텐샬값을 가지고 앞으로 있을 비용들을 미리 지불하는 형식으로 최대값이 얼마가 될것인지를 잡는것이 목표 )
+
+1. **Aggregate Method** 합계
+2. **Accounting Method** 회계
+   Accounting Method란,
+   은행에 적립해놓고 쓰는것과 같다.
+   - Operation이 다르면 비용Charges도 다름
+   - 추가로 Change된 부분은 Credit에서 보관
+   - Credit은 실제 Operation보다는 **차후에 수행될 operation에 사용**
+   - Aggregate Method에서는 모든 Operation이 동일했던 것과는 반대
+   - 전체 Amortized Analysis는 실제 Cost의 상한이어야 함
+   - 전체 Credit은 양의 정수 혹은 0 이어야 함
+   - 따라서, 선택된 Amortized 비용은 음의 값이 나오지 않음
+3. **Potential Method** 가능성
+
+**2가지 적용 예**
+
+- **Stack operation (push, pop, multi-pop)**
+  stack operation이란,
+  Push와 pop, multi-pop은 (n번들어갔다가 n번나오니까)아무리 커도 최악의 경우 O(n)
+  각 object는 push되는 경우에 대해 아무리 커도 한번 pop.
+  push operation의 최대는 O(n)
+  따라서 pop의 횟수는 최대 O(n)
+- **Binary counter** using the increment operation
+
+#### 1-1.Aggregate Analysis기술을 이용한 Stack operation 분석방법
+
+Amortized Cost는 O(n)/n = O(1)
+
+#### 1-2.Aggregate Analysis기술을 이용한 Binary counter 분석방법(15강 6:15)
+
+😭
+
+#### 2-1.Accounting Method기술을 이용한 Stack operation 분석방법
+
+**Push 2, pop 0, multi-pop 0**
+비어있는 stack에 push를 먼저 한다면 Amortized Credit에 저장
+모든 pop에 저장된 credit을 이용하여 수행
+pop의 수는 push의 수와 동일
+전체 Amortized Analysis는 O(n)
+
+#### 2-2.Accounting Method기술을 이용한 Binary counter 분석방법
+
+Accounting Method의 Amortized Cost는
+1이 되면 2, 0이 되면 0, 1에 대해서 credit이 저장
+모든 bit를 reset하는 것은 credit을 사용
+1의 숫자는 항상 0 또는 양수이므로 credit도 0 또는 양수
+전체 Amortized cost는 O(n)
+
+### Dynamic Expansion and Contraction
+
+Table을 사용하다가 할당한 크기가 데이터를 담기에 작아지는 경우
+Table은 더 큰 크기를 재할당 받고
+기존의 데이터는 새로운 table로 모두 복사
+
+반대의 경우로
+Table을 사용하다가 Table의 크기에 비해 데이터가 너무 작은 경우에도
+Table을 (낭비를 줄이기 위해)재할당 받고
+데이터를 모두 복사
+
+Table-Insert와 Table-Delete Operation을 지원한다고 가정
+Table-Insert는 Table에 빈 슬롯이 있으면 한 칸을 차지하고 데이터를 집어 넣음
+Table-Delete는 Table에서 데이터 하나를 삭제하여 빈 슬롯 하나를 추가
