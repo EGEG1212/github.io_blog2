@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/built/images/logo-github.png
+cover: assets/built/images/logo-github.jpg
 navigation: True
 title: 2. Git과 GitHub로 내 커리어 만들기
 date: 2021-03-08 16:40:00

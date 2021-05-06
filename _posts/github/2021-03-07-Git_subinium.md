@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/built/images/logo-github.png
+cover: assets/built/images/logo-github.jpg
 navigation: True
 title: 1. Git & GitHub Page
 date: 2021-03-07 16:40:00
