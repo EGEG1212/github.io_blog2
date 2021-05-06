@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/built/images/audio-logo.jpg
+cover: assets/built/images/logo-voice.jpg
 navigation: True
 title: voice TEST
 date: 2021-04-30 16:40:00

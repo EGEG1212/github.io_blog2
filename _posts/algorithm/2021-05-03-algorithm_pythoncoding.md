@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/built/images/algorithm-logo.png
+cover: assets/built/images/logo-algorithm.png
 navigation: True
 title: 기초 알고리즘과 파이썬코딩
 date: 2021-05-03 16:40:00

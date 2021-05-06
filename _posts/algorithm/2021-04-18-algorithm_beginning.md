@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/built/images/algorithm-logo.png
+cover: assets/built/images/logo-algorithm.png
 navigation: True
 title: 컴퓨터 알고리즘 초급
 date: 2021-04-18 16:40:00

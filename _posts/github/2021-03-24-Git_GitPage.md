@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/built/images/github-logo.png
+cover: assets/built/images/logo-github.png
 navigation: True
 title: 3. Jekyll 기반의 GitHub Page 생성
 date: 2021-03-24 16:40:00
