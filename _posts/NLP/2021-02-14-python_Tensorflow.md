@@ -1,14 +1,14 @@
 ---
-title: "Python과 Tensorflow를 활용한 Al 챗봇 개발"
-category:
-  - category1
-tag:
-  - tag1
-author_profile: true
-sidebar_main: true
-use_math: true
-
-toc: true
+layout: post
+current: post
+cover: assets/built/images/logo-voice.jpg
+navigation: True
+title: Python과 Tensorflow를 활용한 Al 챗봇 개발
+date: 2021-02-14 16:40:00
+tags: [NLP]
+class: post-template
+subclass: "post tag-NLP"
+author: egeg1212
 ---
 
 # Python과 Tensorflow를 활용한 Al 챗봇 개발

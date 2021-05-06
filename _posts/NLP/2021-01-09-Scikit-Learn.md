@@ -1,14 +1,14 @@
 ---
-title: "Scikit-Learn으로 다지는 머신러닝 기초"
-category:
-  - category1
-tag:
-  - tag1
-author_profile: true
-sidebar_main: true
-use_math: true
-
-toc: true
+layout: post
+current: post
+cover: assets/built/images/logo-voice.jpg
+navigation: True
+title: Scikit-Learn으로 다지는 머신러닝 기초
+date: 2021-01-09 16:40:00
+tags: [NLP]
+class: post-template
+subclass: "post tag-NLP"
+author: egeg1212
 ---
 
 # Scikit-Learn으로 다지는 머신러닝 기초

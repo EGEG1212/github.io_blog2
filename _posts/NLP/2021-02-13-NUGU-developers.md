@@ -1,14 +1,14 @@
 ---
-title: "NUGU developers로 쉽게 만드는 AI 서비스"
-category:
-  - category1
-tag:
-  - tag1
-author_profile: true
-sidebar_main: true
-use_math: true
-
-toc: true
+layout: post
+current: post
+cover: assets/built/images/logo-voice.jpg
+navigation: True
+title: NUGU developers로 쉽게 만드는 AI 서비스, NUGU Play 제작
+date: 2021-02-13 16:40:00
+tags: [NLP]
+class: post-template
+subclass: "post tag-NLP"
+author: egeg1212
 ---
 
 # NUGU developers로 쉽게 만드는 AI 서비스, NUGU Play 제작
