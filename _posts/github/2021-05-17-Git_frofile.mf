@@ -1,3 +1,15 @@
+---
+layout: post
+current: post
+cover: assets/built/images/logo-github.jpg
+navigation: True
+title: GitHub Frofile 꾸미기
+date: 2021-05-17 16:40:00
+tags: [github]
+class: post-template
+subclass: "post tag-github"
+author: egeg1212
+---
 깃허브 프로필 꾸미기
 REFERENCE 
 <https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_kr.md>
