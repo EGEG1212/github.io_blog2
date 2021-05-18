@@ -254,3 +254,12 @@ k개의 bootstrap 샘플 $X_1..._k$를 훈련시켜 얻은 k개의 분류기를 
 
 ImageNet Challenge: 이미지를 자동 분류하라
 8층->152층 깊어지고 있음
+
+# [10강] 재현 신경망( Recurrent Neural Networks)
+
+시계열 데이터를 확률적으로 모델링
+
+재현신경망의 한계를 넘은
+**GRU(Gated Recurrnt Units)**
+**LSTM(Long Short-Term Memory)**
+**ESN(Echo State Networks)**
