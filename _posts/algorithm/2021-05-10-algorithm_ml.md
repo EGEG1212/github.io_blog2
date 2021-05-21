@@ -295,3 +295,17 @@ Weka란? Waikato Environment for Knowledge Analysis
 뉴질랜드의 Waikato 대학교 컴퓨터공학부에서 제작
 Weka는 뉴질랜드에서만 발견되는 새이기도 함
 대표적인 기계학습 알고리즘 모음, 데이터 마이닝 도구
+
+# [14강] Theano를 통한 머신러닝 구현
+
+LISA Lab(mila.umontreal.ca/en/)에서 만든 Python 기반 오픈소스 Package
+deeplearning.net/software/theano
+
+**장점**
+Symbolic 연산 철학으로 간결하고 빠르게 모델 구현 가능
+Symbolic 미분이 가능하므로 역전파 등을 직접 구현할 필요가 없음
+동일한 코드를 CPU와 GPN에서 모두 사용 가능
+Python기반이므로, numpy, scipy 등 다양한 Python 패키지와 연동할 수 있음
+
+**단점**
+복잡하고 알기 어려운 에러메시지
