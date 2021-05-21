@@ -303,9 +303,19 @@ deeplearning.net/software/theano
 
 **장점**
 Symbolic 연산 철학으로 간결하고 빠르게 모델 구현 가능
-Symbolic 미분이 가능하므로 역전파 등을 직접 구현할 필요가 없음
+Symbolic 미분이 가능하므로 역전파 등을 직접 구현할 필요가 없음(grade함수 사용)
 동일한 코드를 CPU와 GPN에서 모두 사용 가능
 Python기반이므로, numpy, scipy 등 다양한 Python 패키지와 연동할 수 있음
 
 **단점**
 복잡하고 알기 어려운 에러메시지
+
+**Thano로 GPU 프로그래밍 실습**
+
+1. shared variables: RAM에서 GPU VRAM으로 데이터를 옮겨줌
+2. givens: symbolic 변수에 shared variables르 ㄹ대입
+3. updates: GPU연산 결과를 이용해 shared variables의 값을 수정
+
+**Theano로 신경망 구현하기**
+Theano를 사용하여 머신러닝 알고리즘을 구현할 경우, GPU를 사용하여 빠른 학습 가능.
+간결한 코드 작성 가능, 미분의 자동 계산으로 프로그래머의 일을 줄여줌
