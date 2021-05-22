@@ -30,3 +30,12 @@ author: egeg1212
 |              | [3강] 스마트 계약(이더리움)과 신뢰서비스                                                                                                                                                                                                                                    |
 |              | [4강] 블록체인 비즈니스 사례                                                                                                                                                                                                                                                |
 |  **GitHub**  | None                                                                                                                                                                                                                                                                        |
+
+<사전학습자료>
+▶ 블록체인 한번에 이해하기(뒤태지존님의 블로그)
+<https://homoefficio.github.io/2017/11/19/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8-%ED%95%9C-%EB%B2%88%EC%97%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/>
+▶ 비트코인과 블록체인 기술(NAVER D2)
+<https://d2.naver.com/helloworld/8237898>
+
+네이버
+<https://naver-ai-now.kr/>
