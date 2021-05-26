@@ -24,6 +24,8 @@ author: egeg1212
 | **강의목록** | [1강] 음성언어분야 인공지능(AI) 기술 / 산업현황                                                                                                                                                                                         |
 |              | [2강] 딥러닝 기반 음성인식 기술                                                                                                                                                                                                         |
 
+### [1강] 음성언어분야 인공지능(AI) 기술 / 산업현황
+
 잡음이나 음향간섭등에 의해 음성입력이 왜곡.
 해결방법:
 
@@ -45,7 +47,7 @@ Voice Conversion
 - 특정인의 목소리로 변환하는 기술
 - 특정인의 목소리를 나타내기 위해서는 음색 뿐만 아니라 발음, 억양 등 복합적인 요소가 작용
 
-### 대화처리
+#### 대화처리
 
 Finite-State Machine
 조금 더 나은 방법 Form-based model
@@ -75,3 +77,26 @@ Amazon Echo 알렉사
 SKT NUGU
 KT 기가지니
 롯데 샬롯
+
+### [2강] 딥러닝 기반 음성인식 기술
+
+**Hidden Markov Model(HMM)**
+Markov chainL 미래상태(state)의 조건부 확률 분포가 현재 상태에 의해서만 결정
+음성신호의 dynamics는 HMM으로 모델링, 각 state에서의 관측확률은 GMM, DNN, LSTM등으로 모델링
+
+**GMM-HMM**
+특징(feature) 추출(extraction)
+Gaussian Mixture Modeling : 각state에서, 특징 벡터의 관측확률 분포를, Gaussian들의 weighted summation으로 모델링
+
+특징추출과정
+
+- Waveform(Frame단위)
+- Spectrum
+- Mel-scaled filterbank energy
+- Mel-scaled sepstral coefficient(MFCC)
+- Dynamics를 고려: Static MFCC + Delta + Acc + $a$
+
+**LSTM-HMM**
+**End-to-end AM**
+
+- 기존 hybrid모델
