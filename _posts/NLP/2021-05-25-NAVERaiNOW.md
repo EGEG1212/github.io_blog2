@@ -29,6 +29,12 @@ author: egeg1212
 |                  **PART2.**                  | **HyperCLOVA테크놀로지**                                        |
 | 박우명, 김보섭, 김형석<br>CLOVA Conversation | HyperCLOVA의 한국어 모델                                        |
 |            장민석<br>NAVER AI LAB            | HyperCLOVA Studio 나에게 필요한 인공지능, 내 손으로 쉽게 만들기 |
+|          김선훈<br>NAVER Search NLP          | HyperCLOVA의 활용 (1) 검색 어플리케이션                         |
+|        김경덕<br>NAVER AI Assistatnt         | HyperCLOVA의 활용 (2) AI 어시스턴트                             |
+|     강재욱,이상우<br>CLOVA Conversation      | HyperCLOVA의 활용 (3) 대화(Conversation)                        |
+|            유강민<br>NAVER AI LAB            | HyperCLOVA의 활용 (4) 데이터 증강(Data Augmentation)            |
+|         인수교<br>CLOVA AI Assistant         | HyperCLOVA의 조율 (Controllability)                             |
+|          서동필<br>CLOVA ML System           | HyperCLOVA를 위한 서비스 기반(Service Infrastructure)           |
 
 ### 새로운 AI의 시작, HyperCLOVA
 
@@ -145,7 +151,7 @@ ex1)
 코로나일상에서 국민의 건강과 안전을 케어하는 도구
 (**클로바 케어콜**. 성남시10만건2020.03-2021.02)
 (그 외 10개 지방자치단체 도입. 서울, 고양, 의정부, 춘천, 인천, 성남, 화성, 수원, 전주 부산)
-SME의 사업을 돕는 CLOVA AiCall 전화예약
+SME(도메인전문가)의 사업을 돕는 CLOVA AiCall 전화예약
 AI기술의 집약체 **CLOVA AiCall** - 자연어처리 - 음성인식 - 음성합성 - 텍스트 분석
 
 ex2)
@@ -153,7 +159,7 @@ ex2)
 
 ### HyperCLOVA의 한국어 모델
 
-#### [Language Model] 네이버에서 한국어 모델을 만든 이유 - 박우명Conversation팀
+#### [Language Model] 네이버에서 한국어 모델을 만든 이유 - 박우명Conversation
 
 현 GPT-3는 학습 데이터 구성상 한국어 성능이 제한적이다.
 인터넷언어 분포 :
@@ -188,7 +194,7 @@ GPT-3와 비슷한 규모로 데이터를 학습함.
 NSMC
 KorQuAD1.0 한국어 Machine Reading Comprehension데이터셋
 
-#### [Tokenization] HyperCLOVA가 한국어를 읽는 방법:토큰화(Tokenization) - 김보섭Conversation팀 10:30
+#### [Tokenization] HyperCLOVA가 한국어를 읽는 방법:토큰화(Tokenization) - 김보섭Conversation 10:30
 
 1. 기계가 글을 이해하려면?
    기계가 문장을 이해하기 위해 단위Token으로 문장을 끊어 읽는 능력이 필요함.
@@ -213,7 +219,7 @@ KorQuAD1.0 한국어 Machine Reading Comprehension데이터셋
 4. HyperCLOVA가 글을 읽는 방법(한 문장으로 정리)
    언어모델은 학습용 말뭉치의 1%로부터 학습된 Morpheme-Aware Byte-Level BPE Tokenizer로 문장을 처리함
 
-#### [Metrics] HyperCLOVA 한국어 능력 평가 - 김형석Conversation팀17:39
+#### [Metrics] HyperCLOVA 한국어 능력 평가 - 김형석Conversation17:39
 
 1. 설계목적
    "모델이 생성한 문장은 얼마나 유창한가Fluency"
@@ -226,3 +232,156 @@ KorQuAD1.0 한국어 Machine Reading Comprehension데이터셋
      레퍼런스 의존성이 없으면서 loss가 아닌 생성텍스트에 기반한 품질 평가 지표여야 함.
    - 생성 문장 기반 평가지표
 4. 평가결과
+
+### HyperCLOVA Studio
+
+코드없이 ML/AI기반으로 개발, 실행 할 수 있는 도구.(개발환경)
+
+보통 5 STEP. 1.문제정의, 사용자 리서치 (User Researcher) 2.데이터수집, 데이터분석, 데이터Annotation, 데이터검증 (ML Researcher/Engineer) 3.모델구조, 모델학습, 파라미터 튜딩, 모델평가
+4.ML인프라/Ops 프로덕션 서빙 (ML Ops Researcher/Engineer/ Data Engineer) 5.에러분석, 모니터링, 사용자분석 (SME도메인전문가/Product Service Manager)
+
+NAVER생태계안에 사용 가능.
+
+웹 전화 스마트스피커 모바일디바이스 등등으로 바로 배포하거나 사용이 가능.
+
+### HyperCLOVA의 활용 (1) 검색 어플리케이션
+
+1.Null 검색 질의 재작성 (Null-Query Rewriting)
+'검색결과가 없는 경우' 질의를 재 작성하는 것.
+Null-Query유형 : 오타, 띄어쓰기가 잘 안되었거나, 자소단위가 많이 섞여 있는 경우, 잘못된 정보를 사용하는 경우 등..
+[Few-Shot] 학습데이터셋
+[Prev-Query]이전 클릭, 이전 검색어를 추가정보로 제공
+
+2.쇼핑 리뷰 요약 (Shopping Review Summarization)
+**Faithfulness Evaluation**
+**방식1)** ROUGE(Recall-Oriented Understudy for Gisting Evaluation)
+Word Overlap을 이용하는 방식.
+쇼핑 리뷰와 한 줄 요약이 상호간에 얼마나 단어들이 겹치는지를 계산
+**방식2)** Natural Language Inference
+두 문장의 Entailment를 비교하는 방식.
+쇼핑리뷰(premise)가 한 줄 요약(Hypothesis)을 entailment하는지로 평가
+-> NLI로 faithfulness를 체크하는 방법이 성능 우위.
+단, 멀티 리뷰 요약 특성 상 단일 문장 간의 NLI 비교보다는 복수개 리뷰 문장을 premise로 하는 경우 성능 우위
+
+3.자유 질의 응답 (Free-Form Question Answering)
+**지식백과 기반의 Question Answering**
+Subject + Predicate Question 한글 만든 사람이 누구야?
+Multi-hop Question 미국 대통령 중 그래미 상을 받은 사람은?
+Boolean Question 해파리는 뇌가 있어?
+Long-form Question(How/Why) 시서스가 다이어트에 왜 도움이 되니?
+
+Q&A 프로세스
+(생략)
+
+### HyperCLOVA의 활용 (2) AI 어시스턴트
+
+목적지향형대화 Goal Oriented Dialogs (사용자의 특정 목적을 만족시키기 위한)
+질의응답 Question Answering (사용자의 질문에 전문 지식으로 응답하기 위한)
+일상대화 Chit-Chat Dialogs (목적성이 없는 일상 대화를 수행하기 위한)
+
+사용자의 질문에 대해 위 3가지의 답변을 만들고, Selector에서 최적의 응답을 선택하는 형태.
+
+**AI Assistant가 얻고자 하는 것.**
+
+1. 여러턴의 대화를 자연스럽게 응답하는 능력.
+2. 비정형화된 수많은 텍스트로부터 학습한 여러 지식들에도 응답할 수 있는 능력.
+
+ex. 질문, 응답 + 요약형 설명 + 관련 질문 설명 + 쉬운설명 + 인물 비교 + 관련답변 +
+
+1. 대화 이해 :
+   대화 이해를 위한 컨텍스트 주입 Context Injection
+   - 대화 전체를 이용하여 사용자의 의도를 이해하기 위해
+   - 보통 대명사나 지시 표현(그때, 그다음)의 원래의 표현을 찾아내기 위해, 이전의 대화 내용을 참고하는 **대용어 해소 및 생략 복원 기술, 대화 상태 추적 기술**이 활용 됨.
+   - **Transfomer기반의 문장 인코더**를 사용하여 대화 검색 모듈을 구현함.
+     모듈의 성능은 출력 문장과 정답 문장과의 BLUE스코어(Bilingual Evaluation Understudy Score)를 계산.
+     : Few-Shot을 추출하는 대화 검색 모듈의 규현방식도 품질에 영향을 미쳤으나
+     : 무엇보다 **LM(Language Model)의 크기**가 최종 성능과 큰 연관성 있음.
+2. 시스템 응답 선택 :
+   시멘틱 검색을 이용한 응답 선택
+   - 여러 시스템 응답 후보들 중 가장 맥락에 맞는 응답을 서낵하기 위해 시맨틱 서치를 이용하는 기술.
+3. 시스템 응답 생성 :
+   적절한 시스템 응답 생성을 위한 조율 방법
+   - 생성모델의 결과를 조율하기 위한 기술.
+
+### HyperCLOVA의 활용 (3) 대화(Conversation)
+
+#### HyperCLOVA가 만드는 캐릭터 대화 - 강재욱Conversation
+
+- 일관적 캐릭터 대화체 유지 + 유창성
+- 캐릭터 세계관 유지(캐릭터의 기본 프로필, 배경, 철학 내포)
+  -> PCU(Prompt Control Unit) 캐릭터 대화를 위한 제어 장치
+
+**캐릭터 대화체의 퓨샷 러닝(Few-Shot Learning)**
+'안나는 매사가 행복하고 기운이 넘친다. 공감 능력이 뛰어나고 긍정적이며 리액션이 좋은 편이다.'
+캐릭터 페르소나 모니터링하는 탐지 모델을 별도로 훈련시켜 언어모델 보조.
+
+#### AiCall의 미래와 HyperCLOVA - 이상우Conversation 10:50
+
+**클로바 챗봇 2018~**
+**클로바 고객센터 2019~** - AiCall(문의응대 및 예약을 대화형으로), - HappyCall(보험,증권,리서치 등의 업종에서 고객만족도조사, 불완전판매모니터링 업무 수행.) - (케어콜)
+
+**멀티턴Multi-Turn형태의 목표지향적 대화 시스템**
+사람 -> (음성입력) -> 음성인식 -> (텍스트입력)
+-> **자연어 이해 모델(NLU)** Domain Identification/ User Intent Detection/ Slot Filling -> (사용자 의도 추출)
+-> **대화 관리 모델(DM)** Dialogue State Tracking/ Dialogue Policy -> (답변 분기 결정)
+-> **자연어 생성 모델** System utterance generation/ Answer Recommendation -> (자연어 답변 출력) -> 사람
+
+기존 QA pair 형태로도 데이터를 넣어줄 수 있는
+single-Turn FAQ 시스템이나 자유 대화 시스템과 달리
+많은 데이터, 다양한 시나리오가 필요하기 때문에 더 복잡하다...😥
+
+목표 지향 대화 구축의 어려움
+
+- 유저와 점원이 나눈 대화 로그가 많이 있어도 이를 그대로 대화 구축에 사용할 수는 없음
+- 대화 상태 별(State) 대화 분기를 포함하는 대화 설계를 시나리오 별로 진행하여야
+- 시나리오에 맞는 대화를 데이터 수집가들을 섭외하여 채워나가야 함
+
+예시1 : 사용자 의도에 맞는 발화생성
+기존 난점 : 의도별 발화를 구상하고 수집하는 점에 대한 어려움
+해결책 : 의도별 발화를 의도 예제 없이도 보강할 수 있음
+사용자 인텐트-예약질의(방으로예약될까요?자리없으면밖에앉아도괜찮아요.단체석가능한가요?등등..)
+사용자 인텐트-1인식사가능한지물어보기(혼자먹어도될까요?여기혼밥돼요?저혼자먹을건데주문되나요?점심때사람많아요?등등..)
+이것이 **Data Augmentation 중 Zero-Shot Learning**에 해당
+
+예시2 : 시스템 응답 추천
+앞의 문맥에 맞는 시스템 응답을 추천해 줌
+더 나아가, 대화 분기를 추천해줌
+긍정 -> 진행
+부정 -> 종료
+
+예시3 : HyperCLOVA 연속대화 생성
+한차례의 대화를 기술하는 설명문(Goal Script)>>올해 ACL에서 확인가능
+대화에 대한 간단한 기술만으로 가상 대화를 조절하여 생성할 수 있음.
+대화 설계에 참고할 수 있음
+대화 시스템 평가에 사용될 수 있음
+BERT기반 대화 시스템 성능 향상에 사용될 수있음.
+
+연예인챗봇/메타버스챗봇/친구챗봇/캐릭터어시스턴트
+금융전화AI/전화예약시스템/더강력한FAQ봇/AI콜센터/의료복지전화AI
+
+### HyperCLOVA의 활용 (4) 데이터 증강(Data Augmentation)
+
+효율적인 NLP모델학습을 가능하게하는 데이터증강 기법.
+
+1. 자연어처리 패러다임의 변화
+   사전학습된 언어모델(PLM:Pretrained Language Model)을 이용한 파인튜닝Fine-tuning
+   특정 도메인 혹은 문제를 푸는 NLP 모델로 파인튜닝하는 방법이다.
+   PLM의 대표적인 사례로 LaRva라바가 있다.
+   [데이터설계 -> 데이터수집 -> (PLM)NLP모델학습 -> 성능평가 --> 데이터개선 또는 모델개선]
+   LaRva는 클로바다 언어 모델 기술을 한국어에 적용하여 개발한 새로운 라이브러리.
+   **프롬프트를 활용한 방안** 3:10
+
+2. HyperMix : HyperCLOVA를 이용한 텍스트 증강 기법
+3. HyperMix의 효용성
+
+### HyperCLOVA의 조율 (Controllability)
+
+요약하면
+프롬프트 엔지니어링Prompt Design 대비 프롬프트 튜닝Prompt Tuning의 성능이 높고
+10B 기준, 파인 튜닝(Model Tuning)과 프롬프트 튜닝(Prompt Tuning)성능이 동일.
+
+HyperCLOVA의 조율하기 위해
+**이산공간Discrete에서의 프롬프트 엔지니어링** - 적절한 설명문과 적절한 수의 예시의 중요성 - 편향Bias 다루기
+**연속공간Continuous에서의 프롬프트 엔지니어링** - P-튜닝 - 프롬프트 튜닝
+
+### HyperCLOVA를 위한 서비스 기반(Service Infrastructure)
