@@ -3,8 +3,8 @@ layout: post
 current: post
 cover: assets/built/images/logo-voice.jpg
 navigation: True
-title: 음성인식-음성언어분야 AI 기술/산업 현황 및 구현기술의 이해
-date: 2021-05-25 16:40:00
+title: 딥러닝 기반의 음성인식 기술
+date: 2021-05-26 16:40:00
 tags: [NLP]
 class: post-template
 subclass: "post tag-NLP"
